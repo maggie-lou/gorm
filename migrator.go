@@ -1,6 +1,7 @@
 package gorm
 
 import (
+	"fmt"
 	"reflect"
 
 	"gorm.io/gorm/clause"
@@ -25,6 +26,7 @@ func (db *DB) Migrator() Migrator {
 
 // AutoMigrate run auto migration for given models
 func (db *DB) AutoMigrate(dst ...interface{}) error {
+	fmt.Println("IN HERE")
 	return db.Migrator().AutoMigrate(dst...)
 }
 
