@@ -1,7 +1,6 @@
 package gorm
 
 import (
-	"fmt"
 	"reflect"
 
 	"gorm.io/gorm/clause"
